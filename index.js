@@ -89,8 +89,27 @@ console.log(doMath(10, 5, "+"));
 console.log(doMath(10, 5, "*")); 
 console.log(doMath(10, 0, "/")); */
 
-let name = "harshi";
+/*let name = "harshi";
 let age = "22";
 
 console.log("My name is "+ name + ". she is " + age); //type 1
-console.log(`my name is ${name}. she is ${age}`);  //type 2 imp
+console.log(`my name is ${name}. she is ${age}`);  //type 2 imp */
+
+//DOM in JS
+// console.log(document.body);
+//tags,attributes,content combinely known as element.
+
+/*let buchi = document.getElementById("buchi"); //to get element by using id
+buchi.innerText = "<b>hello</b>"; //it will print whole element
+buchi.innerHTML = "<b>hello</b>"; //it will print content */
+
+let para = document.getElementsByClassName("para");
+let boxes = document.getElementsByClassName("box");
+
+console.log(boxes); //prints as array
+console.log(para);
+
+//to change particular one we'll use index
+
+boxes[1].innerHTML = "hii";
+para[0].innerHTML = "helloooo";
