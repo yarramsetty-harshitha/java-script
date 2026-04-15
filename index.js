@@ -103,7 +103,7 @@ console.log(`my name is ${name}. she is ${age}`);  //type 2 imp */
 buchi.innerText = "<b>hello</b>"; //it will print whole element
 buchi.innerHTML = "<b>hello</b>"; //it will print content */
 
-let para = document.getElementsByClassName("para");
+/*let para = document.getElementsByClassName("para");
 let boxes = document.getElementsByClassName("box");
 
 console.log(boxes); //prints as array
@@ -112,4 +112,37 @@ console.log(para);
 //to change particular one we'll use index
 
 boxes[1].innerHTML = "hii";
-para[0].innerHTML = "helloooo";
+para[0].innerHTML = "helloooo";*/
+
+//events
+/*const myFun = () => {
+    console.log("hello"); //here it just prints hello when we clicked button
+};*/
+
+//to change already existing word to another by clicking button i.e hello -> bye
+/*const myFun = () => {
+    let display =document.getElementById("display")
+   // display.innerHTML = "bye"
+   display.innerHTML = display.innerHTML === "hello" ? "bye" : "hello" //it changes hello to bye and bye to hello by clicking
+
+    if(display.innerHTML === "hello") {
+        display.style.color = "blue";
+    }
+    else {
+   display.style.color = "red"
+    }
+}; */
+
+//changing one image to another by clicking button
+let isShow = true
+const myFun = () => {
+    let display = document.getElementById("display")
+
+    if(isShow) {
+        display.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnb34N79_25Qvdze3AEKBpgrVV7zWyNLwr_Q&s"
+        isShow = !isShow
+    } else {
+        display.src = "https://i.pinimg.com/474x/cc/58/3c/cc583c6d136fff2481317dce00fd3bcb.jpg"
+        isShow = !isShow
+    }
+}
