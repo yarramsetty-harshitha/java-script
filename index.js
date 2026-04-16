@@ -95,7 +95,7 @@ let age = "22";
 console.log("My name is "+ name + ". she is " + age); //type 1
 console.log(`my name is ${name}. she is ${age}`);  //type 2 imp */
 
-//DOM in JS
+//DOM in JS (document object model)
 // console.log(document.body);
 //tags,attributes,content combinely known as element.
 
@@ -134,7 +134,7 @@ para[0].innerHTML = "helloooo";*/
 }; */
 
 //changing one image to another by clicking button
-let isShow = true
+/*let isShow = true
 const myFun = () => {
     let display = document.getElementById("display")
 
@@ -145,4 +145,31 @@ const myFun = () => {
         display.src = "https://i.pinimg.com/474x/cc/58/3c/cc583c6d136fff2481317dce00fd3bcb.jpg"
         isShow = !isShow
     }
+}*/
+
+/*const add = () => {
+        event.preventDefault()
+
+    let val1 = Number(document.getElementById("value1").value);
+    let val2 = Number(document.getElementById("value2").value);
+    let display = document.getElementById("display")
+
+    display.innerHTML = `The sum of ${val1} and ${val2} is ${val1 + val2}`
 }
+const sub = () => {
+     event.preventDefault()
+    let val1 = Number(document.getElementById("value1").value);
+    let val2 = Number(document.getElementById("value2").value);
+    let display = document.getElementById("display")
+
+    display.innerHTML = `the diff of ${val1} and ${val2} is ${val1 - val2}`
+}
+const mul = () => {
+     event.preventDefault()
+    let val1 = Number(document.getElementById("value1").value);
+    let val2 = Number(document.getElementById("value2").value);
+    let display = document.getElementById("display")
+
+    display.innerHTML = `Multiplication of ${val1} and ${val2} is ${val1 * val2}`
+}*/
+
