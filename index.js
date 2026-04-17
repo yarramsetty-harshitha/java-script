@@ -173,3 +173,20 @@ const mul = () => {
     display.innerHTML = `Multiplication of ${val1} and ${val2} is ${val1 * val2}`
 }*/
 
+//changing colour randomly
+
+const changecolor = () => {
+let display = document.getElementById("display")
+let color = "#" 
+let colorcodes= [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f']
+
+for(let i=0;i<6;i++)
+{
+    let randomno = Math.floor(Math.random() * 16)
+    color += colorcodes[randomno]
+}
+    display.style.backgroundColor = color
+}
+
+changecolor()
+
