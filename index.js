@@ -175,7 +175,7 @@ const mul = () => {
 
 //changing colour randomly
 
-const changecolor = () => {
+/*const changecolor = () => {
 let display = document.getElementById("display")
 let color = "#" 
 let colorcodes= [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e','f']
@@ -188,5 +188,45 @@ for(let i=0;i<6;i++)
     display.style.backgroundColor = color
 }
 
-changecolor()
+changecolor()*/
+
+// try catch : for array handling
+
+/*try {
+
+}catch(err) {
+
+}
+
+
+//call backs
+
+function myFun() {
+    console.log("hello");
+}
+
+//setTimeout(myFun,2000) // it prints hello only once after 2 seconds
+
+// to print hello for every 2 
+
+setInterval(myFun,2000)*/
+
+
+
+ const fetchAPI = async () => {
+        let imageURL = null;
+        try {
+            let res = await fetch("https://dog.ceo/api/breeds/image/random")
+            let data = await res.json()
+            imageURL = data.message
+
+
+        }catch(err) {
+            console.log(err);
+        } 
+
+        let image = document.getElementById("image")
+        image.src = imageURL
+    }
+    fetchAPI()
 
